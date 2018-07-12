@@ -18,6 +18,19 @@ allprojects {
 
     implementation 'com.github.irshadsparky:ARCloudVideoVuforia:master-SNAPSHOT'
 ```
+If Above not working for you then download arvideoplayback.aar file and put into libs folder and use as blow:
+
+```xml
+allprojects {
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
+}
+
+    implementation(name: 'arvideoplayback', ext: 'aar')
+```
 
 In other case you have to take whole library project.
 
